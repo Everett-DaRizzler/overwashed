@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pope Pressure Washing provides driveway cleaning, house washing, patio cleaning, sidewalk cleaning, and commercial pressure washing in Phoenix, Arizona. Book online or request a free quote.">
+  <meta name="keywords" content="pressure washing Phoenix, power washing Phoenix, driveway cleaning, house washing, patio cleaning, sidewalk cleaning, Pope Pressure Washing">
+  <meta name="author" content="Pope Pressure Washing">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pope Pressure Washing | Phoenix Pressure Washing">
+  <meta property="og:description" content="Professional residential and commercial pressure washing in Phoenix, Arizona. Book online or request a free quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-netlify-site.netlify.app/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Pope Pressure Washing | Phoenix Pressure Washing & Online Booking</title>
+  <link rel="canonical" href="https://your-netlify-site.netlify.app/">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pope Pressure Washing",
+    "description": "Residential and commercial pressure washing services in Phoenix, Arizona.",
+    "email": "everettpope77@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Phoenix",
+      "addressRegion": "AZ",
+      "addressCountry": "US"
+    },
+    "areaServed": "Phoenix, Arizona",
+    "url": "https://your-netlify-site.netlify.app/",
+    "priceRange": "$$",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+<header>
+  <nav aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Pope Pressure Washing home">
+      <span class="logo-mark">PPW</span>
+      <span>Pope Pressure Washing</span>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#booking">Book Online</a></li>
+      <li><a href="#payments">Pay</a></li>
+      <li><a href="#billing">Monthly Billing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode">Dark</button>
+  </nav>
+
+  <div class="hero" id="top">
+    <p class="eyebrow">Phoenix, Arizona pressure washing</p>
+    <h1>Make Your Property Look Brand New</h1>
+    <p>Driveways - sidewalks - patios - house washing - commercial cleaning</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn">Book Online</a>
+      <a href="#contact" class="btn btn-secondary">Get a Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="services">
+    <h2>Pressure Washing Services</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Driveway Cleaning</h3>
+        <p>Remove dirt, oil stains, tire marks, and grime from concrete surfaces.</p>
+      </article>
+      <article class="card">
+        <h3>House Washing</h3>
+        <p>Soft washing methods that safely clean siding, stucco, and exterior surfaces.</p>
+      </article>
+      <article class="card">
+        <h3>Patio & Sidewalk Cleaning</h3>
+        <p>Restore outdoor spaces so walkways, patios, and entry areas look fresh again.</p>
+      </article>
+      <article class="card">
+        <h3>Commercial Cleaning</h3>
+        <p>Clean storefronts, walkways, service areas, and business exterior surfaces.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="booking" class="accent-section">
+    <div class="section-copy">
+      <p class="eyebrow">Online booking</p>
+      <h2>Request a Service Appointment</h2>
+      <p>Choose the service, date, and time that works best. Your request will be sent through Netlify Forms so you can follow up and confirm the appointment.</p>
+    </div>
+
+    <form id="bookingForm" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="booking">
+      <p class="hidden">
+        <label>Do not fill this out: <input name="bot-field"></label>
+      </p>
+      <label>
+        Full Name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>
+        Phone Number
+        <input type="tel" name="phone" autocomplete="tel" required>
+      </label>
+      <label>
+        Service Needed
+        <select name="service" required>
+          <option value="">Select a service</option>
+          <option>Driveway Cleaning</option>
+          <option>House Washing</option>
+          <option>Patio or Sidewalk Cleaning</option>
+          <option>Commercial Cleaning</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <div class="form-row">
+        <label>
+          Preferred Date
+          <input type="date" name="preferred_date" required>
+        </label>
+        <label>
+          Preferred Time
+          <input type="time" name="preferred_time" required>
+        </label>
+      </div>
+      <label>
+        Property Address
+        <input type="text" name="address" autocomplete="street-address" required>
+      </label>
+      <label>
+        Project Details
+        <textarea name="details" rows="5" placeholder="Tell me what needs cleaned, the size of the area, and anything important to know."></textarea>
+      </label>
+      <button type="submit">Submit Booking Request</button>
+      <p class="form-message" id="bookingMessage" role="status"></p>
+    </form>
+  </section>
+
+  <section id="gallery">
+    <h2>Before & After</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">Before</div>
+      <div class="gallery-item">After</div>
+      <div class="gallery-item">Before</div>
+      <div class="gallery-item">After</div>
+    </div>
+  </section>
+
+  <section id="payments" class="payment-section">
+    <div class="section-copy">
+      <p class="eyebrow">Secure payments</p>
+      <h2>Pay With Stripe</h2>
+      <p>Use these payment buttons after you create your Stripe Payment Links. Replace the placeholder links in <strong>script.js</strong> with your real Stripe links.</p>
+    </div>
+    <div class="cards payment-cards">
+      <article class="card">
+        <h3>Deposit</h3>
+        <p>Collect a booking deposit before the appointment.</p>
+        <button type="button" class="stripe-pay" data-payment="deposit">$25 Deposit</button>
+      </article>
+      <article class="card">
+        <h3>Final Payment</h3>
+        <p>Send customers here when the job is complete.</p>
+        <button type="button" class="stripe-pay" data-payment="final">Pay Invoice</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="billing" class="accent-section">
+    <div class="section-copy">
+      <p class="eyebrow">Recurring service billing</p>
+      <h2>Save a Card for Future Billing</h2>
+      <p>For monthly service plans or repeat customers, use this secure Stripe checkout page to save a payment method. Your card details are handled by Stripe, not stored on this website.</p>
+    </div>
+
+    <form id="billingForm" class="billing-form">
+      <label>
+        Full Name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>
+        Phone Number
+        <input type="tel" name="phone" autocomplete="tel" required>
+      </label>
+      <label>
+        Billing Notes
+        <textarea name="notes" rows="4" placeholder="Example: monthly driveway cleaning, billed after each visit."></textarea>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" name="authorization" required>
+        <span>I understand I will be sent to Stripe to securely save my payment method for future Pope Pressure Washing invoices or agreed recurring charges.</span>
+      </label>
+      <button type="submit">Save Card With Stripe</button>
+      <p class="form-message" id="billingMessage" role="status"></p>
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+      <p>"Our driveway looks completely different. Fast and professional service."</p>
+      <span>- Sarah M.</span>
+    </div>
+    <div class="review">
+      <p>"Very fair pricing and excellent results."</p>
+      <span>- James T.</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p class="contact-intro">Email: <a href="mailto:everettpope77@gmail.com">everettpope77@gmail.com</a></p>
+    <form id="quoteForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden">
+        <label>Do not fill this out: <input name="bot-field"></label>
+      </p>
+      <label>
+        Your Name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>
+        Your Email
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>
+        Your Phone Number
+        <input type="tel" name="phone" autocomplete="tel" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="Describe your project" required></textarea>
+      </label>
+      <button type="submit">Request Quote</button>
+      <p class="form-message" id="formMessage" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Pope Pressure Washing | Phoenix, Arizona | <a href="mailto:everettpope77@gmail.com">everettpope77@gmail.com</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
